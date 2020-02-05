@@ -17,6 +17,8 @@ jobs:
       run: echo Hello, world!
     - name: check
       run: ls
+    - name: FUck wheel
+      run: pip uninstall wheel
     - name: setup
       run: pip install -e .[test]
     - name: test
