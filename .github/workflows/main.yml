@@ -9,12 +9,14 @@ jobs:
     strategy:
       # You can use PyPy versions in python-version. For example, pypy2 and pypy3
       matrix:
-        python-version: [2.7, 3.6]
+        python-version: [3.5, 3.6]
 
     steps:
     - uses: actions/checkout@v2
     - name: Run a one-line script
       run: echo Hello, world!
+    - name: check
+      run: ls
     - name: setup
       run: pip install -e .[test]
     - name: test
