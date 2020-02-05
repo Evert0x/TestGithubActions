@@ -22,4 +22,4 @@ jobs:
     - name: setup
       run: pip install -e .[test]
     - name: test
-      run: pytest tests/
+      run: python -m pytest tests/
