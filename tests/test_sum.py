@@ -4,4 +4,4 @@ def test_success():
     assert TestGithub.sum(1, 2) == 3
 
 def test_fail():
-    assert TestGithub.sum(1, 2) == 4
+    assert TestGithub.sum(2, 2) == 4
